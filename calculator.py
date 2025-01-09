@@ -39,7 +39,7 @@ def decimal_to_binary(decimal):
         else:
             binary += "0"
             # Fill the binary number with 0s to make it 8 bits
-            return binary.zfill(8)
+    return binary.zfill(8)
 
 
 
