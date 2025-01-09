@@ -1,23 +1,15 @@
 # Binary Calculator
+## Description
 
-<!--
+### This Python script provides three main functions
 
-The following requirements must be met to receive full credit on this assignment. The calculator must handle binary arithmetic operations accurately while following proper error handling procedures and output formatting guidelines.
+1.**Binary to Decimal Conversion**: Converts 8-bit binary number to decimal equivalent
 
-- Your solution must have a well-written and thorough README file.
-- The solution must be implemented as a function called `binary_calculator()` with three parameters:
-    - `bin1` - A string parameter representing the first binary number to be used in the calculation. Must contain only 0s and 1s.
-    - `bin2` - A string parameter representing the second binary number to be used in the calculation. Must contain only 0s and 1s.
-    - `operator` - A string containing one of the following arithmetic operators: `'+'`, `'-'`, `'*'`, or `'/'`
-- Do not use Python's built-in `bin()` function.
-- Implement your own binary-to-decimal and decimal-to-binary conversion logic.
-- All binary inputs and outputs should be strings.
-- Handle division by zero by returning `"NaN"`
-- Handle decimal numbers by rounding down to the nearest whole number (flooring).
-- Return `"Error"` for invalid binary inputs (containing characters other than `0` and `1`)
-- Return `"Overflow"` for any operations that overflow (i.e. negative numbers, numbers greater than 8-bits).
-- Outputs must be returned as 8-bit numbers (padded with leading zeros if necessary). For example, the decimal number `5` should be returned as `"00000101"` .
+2.**Decimal to Binary Conversion**: Converts decimal number to 8-bit binary equivalent
 
-Your solution will be tested against various test cases including edge cases, invalid inputs, and all four arithmetic operations.
+3.**Binary Calculator**: Performs basic math operations on two 8-bit binary numbers and returns the result as a 8 bit binary number. The script ensures validity of inputs and errors like overflow, division by zero, and invalid operators
 
- -->
+# Installation
+1. Download Python 3 from Python.org
+2. Copy the script into a Python file
+3. Run the script with Python program or command line
