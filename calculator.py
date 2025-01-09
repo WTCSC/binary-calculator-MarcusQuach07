@@ -4,7 +4,7 @@ def binary_calculator(bin1, bin2, operator):
     # Checks if length is valid for a 8 bit binary number and if all bits are either 0 or 1
     if len(bin1) != 8 or len(bin2) != 8 or not all(bit in ['0', '1'] for bit in bin1 + bin2):
         # Returns error message if binary number is not valid
-        return "Error, not a valid 8-bit binary number" 
+        return "Error" 
 
     # Takes bin1 and bin2 and converts them to integers using the binary_to_decimal function
     num1 = binary_to_decimal(bin1)
@@ -13,7 +13,7 @@ def binary_calculator(bin1, bin2, operator):
     # Checks if conversion is possible
     if isinstance(num1, str) or isinstance(num2, str):
         #returns error if conversion is not possible
-        return "Error, conversion failed"
+        return "Error"
     
     # Takes operator and checks if it is a valid operator
     # Then takes num1 and num2 and performs the operation
@@ -34,7 +34,7 @@ def binary_calculator(bin1, bin2, operator):
         result = num1 // num2
     else:
         # Wont take any other operators
-        return "Error, invalid operator"
+        return "Error"
     
     # Creates a variable called decimal_to_binary that takes in a decimal number and converts it to binary
     def decimal_to_binary(decimal):
@@ -42,7 +42,7 @@ def binary_calculator(bin1, bin2, operator):
         # Checks if decimal is smaller than 0 or greater than 255
         if decimal < 0 or decimal > 255:
             # Returns error message if decimal is not within the valid range for 8-bit binary
-            return "Overflow, not a valid number for 8-bit binary"
+            return "Overflow"
         
         # Empty argument to store binary number
         binary = ""
@@ -68,7 +68,7 @@ def binary_calculator(bin1, bin2, operator):
         # Checks if length is valid for a 8 bit binary number and if all bits are either 0 or 1
         if len(binary) != 8 or not all(bit in ['0', '1'] for bit in binary):
             # Returns error message if binary number is not valid
-            return "Error, not a valid 8-bit binary number"
+            return "Error"
         # Argument to store decimal number, set as 0
         decimal = 0
         
@@ -83,6 +83,6 @@ def binary_calculator(bin1, bin2, operator):
 # Checks if result is less than 0 or greater than 255
     if result < 0 or result > 255:
     # Returns error message if result is not within the valid range for 8-bit binary
-        return "Overflow, not a valid number for 8-bit binary"
+        return "Overflow"
     # Returns the result in binary
     return decimal_to_binary(result)
